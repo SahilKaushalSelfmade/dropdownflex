@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background: #dddddd;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: cursive;
+}
+
+nav {
+  background: white;
+  min-height: 65px;
+  max-height: 65px;
+}
+
+nav .navbar {
+  margin: 0 auto !important;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0 10px;
+}
+
+nav .navbar_left {
+  font-size: 3.5rem;
+}
+
+nav .navbar_right_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+nav .navbar_right_items_item a {
+  font-size: 1.3rem;
+  padding: 0 10px;
+  color: black;
+  font-weight: bold;
+}
+
+nav .navbar_right_items_item a:hover {
+  visibility: visible;
+  background: blue;
+  padding: 22px;
+  border-radius: 5px;
+  color: white;
+  font-size: bolder;
+}
+
+.navbar-dropdown-container {
+  background: grey;
+}
+
+.navbar-dropdown-container .navbar_dropdown {
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item_first {
+  text-align: center;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item_heading {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 20px 0;
+  color: white;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item_pic {
+  height: 120px;
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item li {
+  padding: 5px 0;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item li a {
+  color: white;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-dropdown-container .navbar_dropdown_items_item li a:hover {
+  font-size: 1.4rem;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
